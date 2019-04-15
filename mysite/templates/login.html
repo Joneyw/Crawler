@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyBlog</title>
+  <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+  integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+  integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+
+  <style>
+    .bg {
+      background: url("static/image/mount.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: cover;
+    }
+
+    #summary-container .col-md-3 {
+      text-align: center
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="jumbotron text-center bg" style="margin-bottom:0 ">
+    <h1>SMILES&STYLISH</h1>
+    <p>程序不是年轻的专利，但是，他属于年轻。</p>
+  </div>
+
+  <nav class="navbar navbar-default navbar-fixed navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle   " data-toggle="collapse" data-target="#example-navbar-collapse">
+          <span class="sr-only">切换导航</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">我的爬虫世界</a>
+      </div>
+
+      <div>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> 注册</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> 登录</a></li>
+        </ul>
+      </div>
+
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="{% url 'movieinfo' %}">电影排行榜</a>
+          <li><a href="{% url 'weatherinfo' %}">天气预报周榜</a>
+          <li><a href="{% url 'goodsinfo' %}">京东商品详情</a>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container" id="summary-container">
+
+
+    <div class="row">
+      <div class="col-md-3">
+        <h4>{{html_time}}</h4>
+        <h3>我的排行榜</h3>
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="{% url 'movieinfo' %}">电影排行榜</a></li>
+          <li><a href="{% url 'weatherinfo' %}">天气周榜</a></li>
+          <li><a href="{% url 'goodsinfo' %}">京东商品详情</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="static/image/movie.jpg" alt="movie">
+        <h3>电影排行榜</h3>
+        <p><a class="btn btn-primary" href="{% url 'movieinfo' %}" role="button">点我查看</a></p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="static/image/tianqi1.jpg" alt="movie">
+
+        <br><br>
+        <h3>天气周榜</h3>
+        <p><a class="btn btn-primary" href="{% url 'weatherinfo' %}" role="button">点我查看</a></p>
+      </div>
+      <div class="col-md-3">
+        <img class="img-circle" src="static/image/jd.jpg" alt="movie">
+        <h3>京东商品</h3>
+        <p><a  class="btn btn-primary" href="{% url 'goodsinfo' %}" role="button">点我查看</a></p>
+      </div>
+
+
+     </div>
+    </div>
+    <hr>
+
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <span>Copyright &copy; Joneyw</span>
+          <span>. All Rights Reserved</span>
+        </div>
+      </div>
+    </div>
+
+</body>
+
+</html>

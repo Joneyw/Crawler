@@ -1,0 +1,33 @@
+
+.container {
+    width: 1170px;
+    text-align:center;
+}
+.headerLogoH1 {
+	font-family : ¿¬Ìå;
+	font-size: 40px;
+	line-height: 1.2em;
+	color: #FFF;
+	margin-top: 24px;
+	float: center;
+	 margin-top: 4em; 
+}
+.log{
+	font-size: 80px;     
+}
+#submit-button {
+    width: 350px;
+}
+#zhuce-button{
+	width: 350px;
+}
+
+.footer {
+	width: 1000px;
+	height: 50px;
+	margin: 50px auto 20px;
+	clear: both;
+	color: rgb(110, 110, 110);
+	
+}
+
