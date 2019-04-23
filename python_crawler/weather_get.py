@@ -98,7 +98,7 @@ def delete_to_MySQL():
  
 if __name__ == '__main__':
     delete_to_MySQL()
-    cities="温州".split()  #选择要爬的城市
+    cities="北京".split()  #选择要爬的城市
     print("-------------下面进行爬虫部分---------------")
     for city in cities:            
         data = get_data(city)    

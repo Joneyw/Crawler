@@ -29,3 +29,4 @@ class JD_goods(models.Model):
 
     def __str__(self):
         return self.id
+
