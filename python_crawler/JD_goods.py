@@ -22,6 +22,7 @@ def search():
             EC.element_to_be_clickable((By.CSS_SELECTOR,'#search > div > div.form > button'))
         )
         submit.click()   
+
         get_JD()          
     except TimeoutException:
         return search()    

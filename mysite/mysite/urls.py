@@ -20,8 +20,9 @@ from blog  import views
 
 urlpatterns = [
     
-    url(r'^$', views.index),
-    url(r'^show_movie/', views.show_movie,name="movieinfo"),  
+    
+    url(r'^show_movie/', views.show_movie,name="movieinfo"), 
+    url(r'^$', views.login), 
     url(r'^admin/', admin.site.urls),
     url(r'^show_weather/', views.show_weather,name="weatherinfo"), 
     url(r'^search_weather/', views.search_weather,name="search_weather"), 

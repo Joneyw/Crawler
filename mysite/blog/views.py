@@ -9,16 +9,8 @@ from django.template.loader import get_template
 from django.core.paginator import Paginator
 
 # Create your views here.
-def index(request):
-    # 确定引入的模板文件
-    template = get_template('login.html')
-    # 定义显示的内容
-    time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    views_time = '今天是：' + time
-    # 将views_time通信到HTML中的html_time
-    html = template.render({'html_time':views_time})
-    return HttpResponse(html)
-
+def login(request):
+    return render(request,'index.html')
 
 def show_movie(request):  
     page=request.GET.get('page')

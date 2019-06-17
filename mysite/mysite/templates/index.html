@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+
+
+<link rel="stylesheet" href="/static/simple-line-icons/css/simple-line-icons.css">
+<link href="/static/css2/bootstrap.min.css" rel="stylesheet" />
+<link href="/static/css2/flexslider.css" rel="stylesheet" />
+<link href="/static/css2/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div id="wrapper" class="home-page">
+	<!-- start header -->
+	<header>
+        
+          <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">我的个人网站</a>
+                </div>
+               
+	 <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a href="{% url 'movieinfo' %}">豆瓣TOP榜</a></li>  
+	        			<li><a href="{% url 'weatherinfo' %}">天气预报7日</a></li>
+                        <li><a href="{% url 'goodsinfo' %}">京东手机</a></li>               
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+	</header>
+	<!-- end header -->
+
+
+
+	
+
+	<!-- Slider -->
+        <div id="main-slider" class="flexslider">
+                <img src="/static/img/1.jpg" alt="" />
+				 <div class="container">
+					<div class="row">
+						<div class="col-lg-12">
+                <div class="flex-caption">
+                    <h3>Find beauty</h3> 
+					<p>我们走得太快，是该停下来等等自己的灵魂了。.</p>  
+                </div>
+				 </div>
+            </div>
+        </div>
+              
+        </div>
+		
+	<!-- end slider -->
+ 
+	
+
+	<div class="tlinks"></div>
+	<section class="jumbobox">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div><h1>Our Products</h1>生活不止眼前.</div>
+				
+			</div>
+		</div>
+	</div>
+	</section>
+	
+	
+	<section id="content">
+	
+	
+	<div class="container">
+			<div class="row">
+		<div class="skill-home"> <div class="skill-home-solid clearfix"> 
+		<div class="col-md-4 text-center">
+		<div class="box"> 
+		<span class="icons c1"><i class="icon-star icons"></i></span> <div class="box-area">
+		<h3>豆瓣电影榜</h3>  <p><a href="{% url 'movieinfo' %}">Learn More</a></p></div>
+		</div></div>
+		<div class="col-md-4 text-center"> 
+		<div class="box"> 
+		<span class="icons c3"><i class="icon-umbrella icons"></i></span> <div class="box-area">
+		<h3>天气周榜</h3>  <p><a href="{% url 'weatherinfo' %}">Learn More</a></p></div>
+		</div></div>
+		<div class="col-md-4 text-center"> 
+		<div class="box">
+		<span class="icons c4"><i class="icon-screen-smartphone icons"></i></span> <div class="box-area">
+		<h3>京东手机</h3>  <p><a href="{% url 'goodsinfo' %}">Learn More</a></p></div>
+		</div></div>
+		</div></div></div>
+		</div> 
+	 
+
+	</div>
+	</section> 
+	  	
+	 
+	<footer>
+		<div align="center">
+		<span>Copyright &copy; Joneyw</span>
+      		<span>. All Rights Reserved</span>
+		</div>		
+	
+	</footer>
+</div>
+
+</body>
+</html>
